@@ -1,0 +1,5 @@
+In this class we will be talking about JS loading 
+strategy.
+
+1. First method is loading JS at the end 
+2. Writing JS inside the script tag.
