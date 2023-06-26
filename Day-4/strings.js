@@ -63,3 +63,42 @@ var banana = fruitNames.slice(5, 11);
 console.log(`Names of fruit : ${fruitNames}`);
 console.log(`The first fruit is : ${apple}`);
 console.log(`The secong fruit name is : ${banana}`);
+
+var sl = fruitNames.slice(-12, -2);
+// last character in the string is -1
+// from last: -1, -2, -3, -4 and so on.
+// slice(-2) means last two characters
+//slice(-12, -2) from -12 to -2
+console.log(`Negative parameter slicing : ${sl}`);
+
+// Find substring, no negative values
+var app = fruitNames.substring(0, 5);
+var toend = fruitNames.substring(5);
+console.log(`The substring is ${app}`);
+console.log(`Second part of the string is ${toend}`);
+
+//Replacing string content
+var paragraph = "JavaScript, the versatile language powering " +
+    "dynamic web applications, unleashes the full " +
+    "potential of interactivity with its robust features " +
+    "and seamless integration. With JavaScript, you can " +
+    "revolutionize the way users experience your website " +
+    "by leveraging the power of JavaScript's JavaScript-driven " +
+    "capabilities.";
+console.log(paragraph);
+//Replacing string content
+var newparagraph = paragraph.replace("JavaScript", "Python");
+//replaces only the first match; case sensitive
+console.log(newparagraph);
+
+// To make case insensitive, use regular expression with an /i
+// Regular expressions are written without quotes.
+var newp = paragraph.replace(/javascript/i, "Python");
+console.log(newp);
+
+//To repalce all matches, case sensitive
+var replaceall = paragraph.replace(/JavaScript/g, "Python");
+console.log(replaceall);
+//case insensitive, and all matches
+var replaceall1 = paragraph.replace(/javascript/ig, "Python");
+console.log(replaceall1);
