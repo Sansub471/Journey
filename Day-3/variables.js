@@ -13,4 +13,3 @@ z = +z; // + operator made changed datatype to a number, int
 
 var g = true;
 g = +g; // + operator boolean to a number, int
-g
