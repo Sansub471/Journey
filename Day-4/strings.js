@@ -110,4 +110,26 @@ console.log(upper);
 var lower = text1.toLowerCase();
 console.log(lower);
 
-//
+// concat
+var msg1 = 'Hello';
+var msg2 = ' NEPAL';
+var greeting = msg1.concat(msg2);
+console.log(greeting);
+
+//remove whitespaces from both sides of a string
+var spaces = "  Hello world    ";
+console.log(spaces);
+spaces = spaces.trim();
+console.log("Trimmed string:", spaces);
+
+//extracting characters
+var pos = 0;
+var firsChar = spaces.charAt(pos);
+console.log(`In string '${spaces}' character at position ${pos} is ${firsChar}`);
+var charCode = spaces.charCodeAt(pos);
+console.log(`Unicode of character ${firsChar} is : ${charCode}`);
+
+//converting a string to an array
+var txt = "a,e,i,o,u";
+var vowels = txt.split(",");
+console.log(`The vowels are : ${vowels}`);
