@@ -102,3 +102,12 @@ console.log(replaceall);
 //case insensitive, and all matches
 var replaceall1 = paragraph.replace(/javascript/ig, "Python");
 console.log(replaceall1);
+
+//converting case
+var text1 = "JavaScript, Python, C++, C, Pascal, Go, Rust";
+var upper = text1.toUpperCase();
+console.log(upper);
+var lower = text1.toLowerCase();
+console.log(lower);
+
+//
