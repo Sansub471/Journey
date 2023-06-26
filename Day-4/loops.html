@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Loops in JS</h1>
+    <script>
+        //for loop
+        console.log("Let's try for loop.");
+        for (let i = 0; i < 10; i++) {
+            if (i % 2 == 0) {
+                console.log(i);
+            }
+        }
+
+        console.log("Let's try while loop:");
+        i = 0;
+        //while loop
+        while (i < 10) {
+            console.log(i);
+            i++;
+        }
+
+        //do while 
+        console.log("Let's try do while loop.");
+        i = 0;
+        do {
+            if (i % 2 == 1) {
+                console.log(i);
+            }
+            i++;
+        } while (i < 10);
+
+        //for in loop
+        // objects
+        let animal = {
+                name: "Dog",
+                leg: 4,
+                pet: true,
+                description: "Man best friend"
+            }
+            // To access this, you could do
+        console.log("Animal : ", animal.name);
+        console.log("for in loop");
+        for (let key in animal) {
+            console.log(key, ": ", animal[key]);
+        }
+
+        //Arrays
+        let names = ["Subash", "Ravi", "Sunil", "Chins"];
+        for (let index in names) {
+            console.log(index, names[index]);
+        }
+
+        // for of loop
+        for (let name of names) {
+            console.log(name)
+        }
+    </script>
+</body>
+
+</html>
