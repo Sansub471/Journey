@@ -14,4 +14,5 @@ sum = Number(val1) + val2;
 console.log(`The sum is ${sum}`);
 
 //Checkout
-//dorey.github.io
+//dorey.github.io/JavaScript-Equity-Table/
+//wtfjs.com
