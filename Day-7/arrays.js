@@ -120,3 +120,27 @@ console.log(cities.filter(city => city.population > 300000));
 
 // map function
 console.log(cities.map(city => city.population * 2));
+
+// Array sorting
+var cars = [
+    { type: "Volvo", year: 2016 },
+    { type: "Saab", year: 2001 },
+    { type: "BMW", year: 2010 }
+];
+cars.sort(function(a, b) {
+    return a.year - b.year;
+}); // sort by year
+console.log("Sort by year : ");
+console.log(cars);
+
+// sort by name
+/*
+cars.sort(function(a, b) {
+    var x = a.type.toLocaleLowerCase();
+    var y = b.type.toLocaleLowerCase();
+    if (x < y) { return -1; }
+    if (x > y) { return 1; }
+    return 0;
+});
+console.log(cars);
+*/
