@@ -4,4 +4,3 @@ let paragraph = "Support WebAssembly debugging" +
     "debugging with DWARF information (using" +
     "an extension)."
 let line = paragraph.slice(0, 20);
-let

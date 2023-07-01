@@ -80,3 +80,5 @@ function grandParent() {
 }
 
 grandParent();
+
+// This is the scope part, come back again for lexical scope.
