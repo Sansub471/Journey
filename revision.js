@@ -44,7 +44,38 @@ console.log(joinString('-', 'My', 'name', 'is', 'geSpiron'));
 let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 let [a, b, c] = arr;
 let [, , , ...others] = arr;
+// let [a,b,c, ...others] = arr; // single line
 console.log(`First  : ${a}`);
 console.log(`Second : ${b}`);
 console.log(`Third  : ${c}`);
 console.log(`Others : ${others}`);
+
+
+// Destructuring Objects:
+// With object destructuring, you can extract values from an 
+// object and assign them to variables based on their property names. 
+let person = {
+    naam: "geSpiron",
+    age: 22,
+    college: "IOE",
+    course: "JavaScript"
+}
+
+let { naam, course } = person;
+console.log(`The name is ${naam}`);
+console.log(`The course taken is ${course}`);
+
+// nested object
+const user = {
+    naa: 'John Doe',
+    age: 30,
+    address: {
+        city: 'New York',
+        country: 'USA',
+    },
+};
+
+const { naa, address: { city } } = user;
+
+console.log(naa); // Output: John Doe
+console.log(city); // Output: New York
