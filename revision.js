@@ -21,3 +21,19 @@ console.log(`The area of square of side ${square.length} is ${square.area}`);
 
 square.side = 15;
 console.log(`The area of square of side ${square.length} is ${square.area}`);
+
+// make your join function, don't use join from arrays
+// ...words rest operator
+function joinString(separator, ...words) {
+    let sentence = '';
+    words.forEach((word, index) => {
+        if (index != words.length - 1) {
+            sentence += word + separator;
+        } else {
+            sentence += word;
+        }
+    })
+    return sentence;
+}
+
+console.log(joinString('-', 'My', 'name', 'is', 'geSpiron'));
