@@ -79,3 +79,16 @@ const { naa, address: { city } } = user;
 
 console.log(naa); // Output: John Doe
 console.log(city); // Output: New York
+
+// Match stick houses
+function matchHouses(num) {
+    if (num < 0) return -1;
+    if (num == 0) return 0;
+    return 6 + (num - 1) * 5;
+}
+
+let housenumber = 4;
+console.log(`For ${housenumber} houses ${matchHouses(housenumber)} matches.`);
+
+housenumber = 5;
+console.log(`For ${housenumber} houses ${matchHouses(housenumber)} matches.`);
