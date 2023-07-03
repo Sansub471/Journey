@@ -37,3 +37,14 @@ function joinString(separator, ...words) {
 }
 
 console.log(joinString('-', 'My', 'name', 'is', 'geSpiron'));
+
+// Question 3
+// array destructuring
+// With array destructuring, you can unpack values from an array into individual variables.
+let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+let [a, b, c] = arr;
+let [, , , ...others] = arr;
+console.log(`First  : ${a}`);
+console.log(`Second : ${b}`);
+console.log(`Third  : ${c}`);
+console.log(`Others : ${others}`);
