@@ -42,4 +42,22 @@ tableTag.tBodies[0].rows[0].cells[0].style = "background-color:red;";
 tableTag.tBodies[0].rows[0].cells[1].style = "background-color:blue;";
 tableTag.tBodies[0].rows[1].cells[0].style = "background-color:green;";
 tableTag.tBodies[0].rows[1].cells[1].style = "background-color:yellow;";
-// table can be thead also
+// table can be 'thead' also
+
+// Till now we were navigating the DOM tree
+// Now, let's use 'class' and 'id'
+console.log(elements_list); // id becomes a global variable
+elements_list.style.background = 'magenta';
+console.log(table_1);
+
+// getElementbyId
+const ulList = document.getElementById("elements_list");
+ulList.style.backgroundColor = "crimson";
+
+// using class name
+const listItem = document.getElementsByClassName("list-item");
+console.log(listItem); // loop through it to change style
+
+// getElementByName, getElementByTag
+console.log(document.getElementsByTagName("table"));
+console.log(document.getElementsByName("counting-table"));
