@@ -35,5 +35,11 @@ console.log(secondLi.previousElementSibling.textContent);
 
 // table DOM manipulation
 // there can be multiple tbody in a html page.
+console.log('Table manipulation.');
 const tableTag = document.body.children[1];
 console.log(tableTag.tBodies[0].rows[0].textContent);
+tableTag.tBodies[0].rows[0].cells[0].style = "background-color:red;";
+tableTag.tBodies[0].rows[0].cells[1].style = "background-color:blue;";
+tableTag.tBodies[0].rows[1].cells[0].style = "background-color:green;";
+tableTag.tBodies[0].rows[1].cells[1].style = "background-color:yellow;";
+// table can be thead also
