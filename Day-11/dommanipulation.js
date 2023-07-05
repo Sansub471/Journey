@@ -36,7 +36,7 @@ console.log(secondLi.previousElementSibling.textContent);
 // table DOM manipulation
 // there can be multiple tbody in a html page.
 console.log('Table manipulation.');
-const tableTag = document.body.children[1];
+const tableTag = document.body.children[4];
 console.log(tableTag.tBodies[0].rows[0].textContent);
 tableTag.tBodies[0].rows[0].cells[0].style = "background-color:red;";
 tableTag.tBodies[0].rows[0].cells[1].style = "background-color:blue;";
@@ -61,3 +61,21 @@ console.log(listItem); // loop through it to change style
 // getElementByName, getElementByTag
 console.log(document.getElementsByTagName("table"));
 console.log(document.getElementsByName("counting-table"));
+
+// query selectors, css style selectors
+const listItems = document.querySelectorAll('.list-item');
+// for single selection like id, use querySelector('.list-item');
+console.log(listItems);
+
+const lastLi = document.querySelector('ul > li:last-child');
+// 'nth-child(2)', second child
+console.log(lastLi.textContent);
+
+//querySelector is static while getElementById is dynamic i.e. can change
+// during runtime.
+
+// let's print the same value from html page
+console.log('querySelector vs getElements:');
+console.log(allDivs);
+
+// coming back after many shutdowns
