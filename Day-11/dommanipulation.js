@@ -76,6 +76,15 @@ console.log(lastLi.textContent);
 
 // let's print the same value from html page
 console.log('querySelector vs getElements:');
-console.log(allDivs);
+//console.log(allDivs);
 
-// coming back after many shutdowns
+// accessing the self made attribute of HTML element
+// elements_list is global because it is an id of html element.
+console.log(elements_list.getAttribute('data'));
+console.log(elements_list.setAttribute('order-placed', 'pending'));
+console.log(elements_list.getAttribute('order-placed'));
+console.log(elements_list.hasAttribute('order-placed'));
+//console.log(elements_list.removeAttribute('order-placed'));
+console.log(elements_list.attributes);
+
+// Create elements on the fly
