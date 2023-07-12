@@ -2,3 +2,5 @@ Day 30/60 #LSPPD30  "Put your tweet here."
 #LearningWithLeapfrog #LeapfrogStudentPartnershipProgram.  
 #60DaysOfLearningWithLeapfrog
 @lftechnology
+
+Learnt about Bayes Theorem, Naive Bayes classifier and Naive Bayes inference rule for sentiment analysis using a binary classifier 

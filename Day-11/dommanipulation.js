@@ -88,3 +88,4 @@ console.log(elements_list.hasAttribute('order-placed'));
 console.log(elements_list.attributes);
 
 // Create elements on the fly
+// had a very busy day, too tired for coding.
