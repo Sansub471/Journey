@@ -88,4 +88,16 @@ console.log(elements_list.hasAttribute('order-placed'));
 console.log(elements_list.attributes);
 
 // Create elements on the fly
-// had a very busy day, too tired for coding.
+const newDiv = document.createElement('div');
+const newText = document.createTextNode('Hello world!');
+newDiv.appendChild(newText);
+body.append(newDiv); // body is the id for body tag
+//body.prepend(newDiv);
+//body.before(newDiv);
+//body.after(newDiv);
+
+// replace an element
+//firstDiv.replaceWith(newDiv);
+
+// remove an element
+firstDiv.remove();
