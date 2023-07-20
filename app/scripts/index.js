@@ -2,7 +2,6 @@ let btn = document.getElementById('toggleBtn');
 btn.addEventListener('click', toggleBulb);
 
 function toggleBulb(e) {
-    // Better to first check the current state of the light
     if (btn.textContent.includes('On')) {
         bulb.src = "./images/lighton.jpg";
         btn.textContent = "Turn Off";
