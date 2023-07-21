@@ -12,3 +12,5 @@ function toggleBulb(e) {
         console.log("Error Unexpected text content in the button!");
     }
 }
+
+// console.log("No motivation left to cotinue my job.")
