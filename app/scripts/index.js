@@ -13,4 +13,4 @@ function toggleBulb(e) {
     }
 }
 
-// console.log("No motivation left to cotinue my job.")
+console.log('The day is bad, i have lost hope.')
