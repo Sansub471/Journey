@@ -1,10 +1,11 @@
 let addBtn = document.getElementById("add_btn");
 addBtn.addEventListener('click', addChapter);
 let parentList = document.getElementById('parent-list');
+//let msg = document.getElementById('empty-msg');
 
 function addChapter(event) {
     // check if empty message is present
-    if (parentList.children[0].id == "empty-msg") {
+    if (parentList.children[0].lastElementChild.id == "empty-msg") {
         parentList.children[0].remove();
     }
 
@@ -26,15 +27,18 @@ function addChapter(event) {
 }
 
 function removeChapter(currentElement) {
-    //console.log(currentElement.parentElement);
-    currentElement.parentElement.remove(); // removed li 
+    let liClass = currentElement.parentElement.className;
+    currentElement.parentElement.remove(); // removed li
+
     // check if list is empty
     if (parentList.children.length <= 0) {
+        let newLi = document.createElement('li');
+        newLi.className = "list-group-item d-flex justify-content-center";
         let newEmptyMsg = document.createElement("h3");
-        newEmptyMsg.textContent = "Empty! Please add a chapter.";
+        newEmptyMsg.textContent = "Empty! Please add an item.";
         newEmptyMsg.id = "empty-msg";
-        newEmptyMsg.className = "list-group-item d-flex justify-content-center";
-        parentList.appendChild(newEmptyMsg);
+        newLi.appendChild(newEmptyMsg);
+        parentList.appendChild(newLi);
     }
 }
 
