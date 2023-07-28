@@ -14,9 +14,13 @@ function addChapter(event) {
     // use inner html
     newLi.innerHTML = `<h3 class="flex-grow-1">${currentChapterName}</h3>
     <button class="btn btn-warning mx-3">Edit</button>
-    <button class="btn btn-danger">Remove</button>`
+    <button class="btn btn-danger" onclick="removeChapter(this)">Remove</button>`
 
     let parentList = document.getElementById('parent-list');
     parentList.appendChild(newLi);
+}
 
+function removeChapter(currentElement) {
+    //console.log(currentElement.parentElement);
+    currentElement.parentElement.remove(); // removed li 
 }
