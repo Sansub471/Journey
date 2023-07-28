@@ -19,7 +19,7 @@ function addChapter(event) {
     //newLi.textContent = currentInput.value;
     // use inner html
     newLi.innerHTML = `<h3 class="flex-grow-1">${currentChapterName}</h3>
-    <button class="btn btn-warning mx-3">Edit</button>
+    <button class="btn btn-warning mx-3" onclick="editChapter(this)">Edit</button>
     <button class="btn btn-danger" onclick="removeChapter(this)">Remove</button>`
     parentList.appendChild(newLi);
 
@@ -35,8 +35,26 @@ function removeChapter(currentElement) {
         newEmptyMsg.id = "empty-msg";
         newEmptyMsg.className = "list-group-item d-flex justify-content-center";
         parentList.appendChild(newEmptyMsg);
-    } else {
-
     }
+}
 
+function editChapter(currentElement) {
+    if (currentElement.textContent == "Save") {
+        currentElement.textContent = "Edit";
+        currentElement.className = "btn btn-warning mx-3";
+        let currChapterName = currentElement.previousElementSibling.value; // input text comes from here
+        let currHeading = document.createElement("h3");
+        currHeading.className = "flex-grow-1";
+        currHeading.textContent = currChapterName;
+        currentElement.parentElement.replaceChild(currHeading, currentElement.previousElementSibling);
+    } else {
+        currentElement.textContent = "Save";
+        currentElement.className = "btn btn-outline-success";
+        let currentChapterName = currentElement.previousElementSibling.textContent;
+        let currInput = document.createElement("input");
+        currInput.type = "text";
+        currInput.placeholder = `${currentChapterName}`;
+        currInput.className = "form-control";
+        currentElement.parentElement.replaceChild(currInput, currentElement.previousElementSibling);
+    }
 }
