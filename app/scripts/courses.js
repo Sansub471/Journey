@@ -18,9 +18,21 @@ function addChapter(event) {
 
     let parentList = document.getElementById('parent-list');
     parentList.appendChild(newLi);
+
 }
 
 function removeChapter(currentElement) {
     //console.log(currentElement.parentElement);
     currentElement.parentElement.remove(); // removed li 
+    let parentList = document.getElementById('parent-list');
+    // check if list is empty
+    if (parentList.children.length <= 0) {
+        let newEmptyMsg = document.createElement("h3");
+        newEmptyMsg.textContent = "Empty! Please add a chapter.";
+        newEmptyMsg.className = "list-group-item d-flex justify-content-center";
+        parentList.appendChild(newEmptyMsg);
+    } else {
+
+    }
+
 }
