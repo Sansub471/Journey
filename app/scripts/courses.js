@@ -12,6 +12,7 @@ function addChapter(event) {
     let currentBtn = event.currentTarget;
     let currentInput = currentBtn.previousElementSibling;
     let currentChapterName = currentInput.value;
+    currentInput.value = " ";
 
     // Now add li 
     let newLi = document.createElement('li');
