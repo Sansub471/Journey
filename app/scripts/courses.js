@@ -63,3 +63,4 @@ function editChapter(currentElement) {
         currentElement.parentElement.replaceChild(currInput, currentElement.previousElementSibling);
     }
 }
+// Explore how vanilla javascript works!!
