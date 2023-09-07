@@ -23,3 +23,5 @@ var lpos = str.lastIndexOf("locate");
 console.log("The search space is \n", str);
 console.log(`The first position of locate is ${fpos}`);
 console.log(`The last postion of locate is ${lpos}`);
+
+// This is for the revision
