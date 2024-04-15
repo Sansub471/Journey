@@ -30,3 +30,5 @@ function HCFLCM(a, b) {
     console.log("The LCM is : ", lcm);
     return "The HCF is " + hcf + " and the LCM is " + lcm;
 }
+
+// This is a comment that makes my day go bad.
