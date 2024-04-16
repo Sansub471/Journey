@@ -30,3 +30,10 @@ function HCFLCM(a, b) {
     console.log("The LCM is : ", lcm);
     return "The HCF is " + hcf + " and the LCM is " + lcm;
 }
+
+let num = prompt("Give me a number : ");
+isPrime(num);
+let a = prompt("First number : ");
+let b = prompt("Second number : ");
+let mesg = HCFLCM(a, b);
+console.log(msg);
