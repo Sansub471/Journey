@@ -37,5 +37,3 @@ let a = prompt("First number : ");
 let b = prompt("Second number : ");
 let mesg = HCFLCM(a, b);
 console.log(msg);
-
-// Back to code now, life fck up.
