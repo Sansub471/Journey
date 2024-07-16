@@ -13,7 +13,7 @@ function isPrime(num) {
     }
 }
 
-// Start of the day, it's too late for me now.
+
 
 // Formula : a * b = HCF(a, b) * LCM(a, b)
 function HCFLCM(a, b) {
